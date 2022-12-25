@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<title>Доставка пиццы</title>
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700&amp;subset=cyrillic-ext" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="container text-center">
+			<img src="img/logo/logo-pizza-small.jpg" width="100" alt="Пицца">
+			<div class="display-4">Доставка пиццы</div>
+			<p class="lead">Быстро и вкусно</p>
+		</div>
+	</header>
+
+	<div class="container mb-5">
+		<div class="row">
+
+			<!-- Товары -->
+			<div class="col-md-8">
+				<div class="row">
+
+					<!-- Карточка Пиццы 1 -->
+					<div class="col-md-6">
+						<div class="card mb-4" data-id="01">
+							<img class="product-img" src="img/pizza/fish-small.jpg" alt="Пицца">
+							<div class="card-body text-center">
+								<h4 class="item-title">Морская</h4>
+								<p><small data-items-in-box class="text-muted">50см</small></p>
+
+								<div class="details-wrapper">
+
+									<!-- Счетчик -->
+									<div class="items counter-wrapper">
+										<div class="items__control" data-action="minus">-</div>
+										<div class="items__current" data-counter>1</div>
+										<div class="items__control" data-action="plus">+</div>
+									</div>
+									<!-- // Счетчик -->
+
+
+									<div class="price">
+										<div class="price__weight"></div>
+										<div class="price__currency">500 ₽</div>
+									</div>
+								</div>
+
+								<button data-cart type="button" class="btn btn-block btn-outline-warning">+ в корзину</button>
+
+							</div>
+						</div>
+					</div>
+					<!-- // Карточка Пиццы 1 -->
+
+					<!-- Карточка Пиццы 2 -->
+					<div class="col-md-6">
+						<div class="card mb-4" data-id="02">
+							<img class="product-img" src="img/pizza/meat-small.jpg" alt="Пицца">
+							<div class="card-body text-center">
+								<h4 class="item-title">Супермясная</h4>
+								<p><small data-items-in-box class="text-muted">50 см</small></p>
+
+								<div class="details-wrapper">
+									<div class="items counter-wrapper">
+										<div class="items__control" data-action="minus">-</div>
+										<div class="items__current" data-counter>1</div>
+										<div class="items__control" data-action="plus">+</div>
+									</div>
+
+									<div class="price">
+										<div class="price__weight"></div>
+										<div class="price__currency">450 ₽</div>
+									</div>
+								</div>
+
+								<button data-cart type="button" class="btn btn-block btn-outline-warning">+ в корзину</button>
+
+							</div>
+						</div>
+					</div>
+					<!-- // Карточка Пиццы 2 -->
+
+					<!-- Карточка Пиццы 3 -->
+					<div class="col-md-6">
+						<div class="card mb-4" data-id="03">
+							<img class="product-img" src="img/pizza/cheese-small.jpg" alt="Пицца">
+							<div class="card-body text-center">
+								<h4 class="item-title">Ветчина и сыр</h4>
+								<p><small data-items-in-box class="text-muted">50 см</small></p>
+
+								<div class="details-wrapper">
+									<div class="items counter-wrapper">
+										<div class="items__control" data-action="minus">-</div>
+										<div class="items__current" data-counter>1</div>
+										<div class="items__control" data-action="plus">+</div>
+									</div>
+
+									<div class="price">
+										<div class="price__weight"></div>
+										<div class="price__currency">400 ₽</div>
+									</div>
+
+								</div>
+
+								<button data-cart type="button" class="btn btn-block btn-outline-warning">+ в корзину</button>
+
+							</div>
+						</div>
+					</div>
+					<!-- // Карточка Пиццы 3 -->
+
+					<!-- Карточка Пиццы 4 -->
+					<div class="col-md-6">
+						<div class="card mb-4" data-id="04">
+							<img class="product-img" src="img/pizza/home-small.jpg" alt="Пицца">
+							<div class="card-body text-center">
+								<h4 class="item-title">Домашняя</h4>
+								<p><small data-items-in-box class="text-muted">50 см</small></p>
+
+								<div class="details-wrapper">
+									<div class="items counter-wrapper">
+										<div class="items__control" data-action="minus">-</div>
+										<div class="items__current" data-counter>1</div>
+										<div class="items__control" data-action="plus">+</div>
+									</div>
+
+									<div class="price">
+										<div class="price__weight"></div>
+										<div class="price__currency">350 ₽</div>
+									</div>
+
+								</div>
+
+								<button data-cart type="button" class="btn btn-block btn-outline-warning">
+									+ в корзину
+								</button>
+
+							</div>
+						</div>
+					</div>
+					<!-- // Карточка Пиццы 4 -->
+
+				</div>
+			</div>
+
+			<!-- Корзина -->
+			<div class="col-md-4">
+
+				<!-- Корзина -->
+				<div class="card mb-4">
+					<div class="card-body">
+						<h5 class="card-title">Ваш заказ</h4>
+						<div data-cart-empty class="alert alert-secondary" role="alert">
+							Корзина пуста
+						</div>
+						<!-- cart-wrapper -->
+						<div class="cart-wrapper">
+						</div>
+						<!-- // cart-wrapper -->
+
+						<!-- Стоимость заказа -->
+						<div class="cart-total">
+							<p data-cart-delivery class="none">
+								<span class="h5">Доставка:</span> 
+								<span class="delivery-cost ">250 ₽</span><br> 
+								<span class="small">Бесплатно при заказе от 700 ₽</span>
+							</p>
+							<p><span class="h5">Итого:</span> <span class="total-price">0</span> <span class="rouble">₽</span></p>
+						</div>
+						<!-- // Стоимость заказа -->
+
+					</div>
+
+					<!-- Оформить заказ -->
+					<div id="order-form" class="card-body border-top none">
+						<h5 class="card-title">Оформить заказ</h4>
+						<form>
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Ваш номер телефона">
+							</div>
+							<button type="submit" class="btn btn-primary">Заказать</button>
+						</form>
+					</div>
+					<!-- // Оформить заказ -->
+
+				</div>
+				<!-- // Корзина -->
+
+
+			</div>
+
+		</div>
+	</div>
+
+	<script src="./js/calcPrice.js"></script>
+	<script src="./js/toggleCartStatus.js"></script>
+	<script src="./js/counter-02.js"></script>
+	<script src="./js/cart-02.js"></script>
+
+</body>
+
+</html>
